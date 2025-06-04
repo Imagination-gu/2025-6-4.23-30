@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Imagination - Gakushuin Disney Circle</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="fixed-header">
+    <a href="#" class="welcome-text" onclick="location.href = location.pathname; return false;">
+      ようこそ！Imagination特設Webサイトへ！
+    </a>
+    <div class="nav-links">
+      <a href="#activities">活動</a>
+      <a href="#voices">メンバーの声</a>
+      <a href="#calendar">年間予定</a>
+      <a href="#instagram">Instagram</a>
+      <a href="#news">News</a>
+      <a href="login.html">ログイン</a>
+      <a href="register.html">新規登録</a>
+
+    </div>
+  </div>
+
+  <div class="content fade-in">
+    <header>
+      <img src="IMG_3203.jpg" alt="Imagination Logo" loading="lazy" />
+      <h1>GAKUSHUIN UNIVERSITY DISNEY CIRCLE<br>IMAGINATION</h1>
+      <div class="social-links">
+        <a href="https://x.com/donald64daisy66?fbclid=..." target="_blank">X (旧Twitter)</a>
+        <a href="https://www.instagram.com/64.imagination.66/" target="_blank">Instagram</a>
+      </div>
+    </header>
+
+    <section class="intro">
+      <p>
+        🏰学習院大生のためのディズニーサークル🏰<br>
+        学習院生による学習院生のためのディズニーサークルです！<br>
+        現在約100名、ディズニーが好き！という共通点を持った１〜４年生が集まっています！<br>
+        活動は主に月1回で自由参加型となっているため他団体と兼サーしながらお楽しみいただけます！<br>
+        入会希望の方はいつでもSNSからお気軽に✉️
+      </p>
+    </section>
+    <section class="auth-links">
+      <h2>会員向け機能</h2>
+      <div class="auth-buttons">
+        <button onclick="location.href='login.html'">ログイン</button>
+        <button onclick="location.href='register.html'">新規登録</button>
+      </div>
+    </section>
+    
+    <section class="slider-container">
+      <button class="arrow left" id="prevBtn">&lt;</button>
+      <div class="slider-wrapper" id="sliderWrapper">
+        <img src="DSC_8290-Enhanced-NR.jpg" alt="集合写真1" loading="lazy"/>
+        <img src="DSC_7955.jpg" alt="集合写真2" loading="lazy"/>
+        <img src="DSC_2429.jpg" alt="集合写真3" loading="lazy"/>
+        <img src="DSC_3194.jpg" alt="集合写真4" loading="lazy"/>
+      </div>
+      <button class="arrow right" id="nextBtn">&gt;</button>
+    </section>
+
+    <section class="activities" id="activities">
+      <h2>主な活動内容</h2>
+      <ul>
+        <li>🏰 年3〜4回のディズニーインパ</li>
+        <li>🎉 映画鑑賞</li>
+        <li>📷 ディズニー関連の展示会・イベント</li>
+        <li>💬 ディズニー雑談会などなど</li>
+      </ul>
+    </section>
+
+    <section class="voices" id="voices">
+      <h2>メンバーの声（サクラ）</h2>
+      <blockquote>「ディズニーがもっと好きになった！一緒に行ける仲間が増えて最高です✨」</blockquote>
+      <blockquote>「初心者でも気軽に参加できました！優しい人ばかりで安心です😊」</blockquote>
+    </section>
+
+    <section class="calendar" id="calendar">
+      <h2>年間イベント予定</h2>
+      <table>
+        <tr><th>月</th><th>イベント</th></tr>
+        <tr><td>4月</td><td>新歓お食事会</td></tr>
+        <tr><td>5月</td><td>パークツアー</td></tr>
+        <tr><td>6月</td><td>映画鑑賞</td></tr>
+        <tr><td>11月</td><td>学園祭</td></tr>
+        <tr><td>3月</td><td>追いコン</td></tr>
+      </table>
+    </section>
+
+    <section class="instagram" id="instagram">
+      <h2>Instagramで活動の様子をチェック！</h2>
+      <p>最新の投稿や写真は<a href="https://www.instagram.com/64.imagination.66/" target="_blank">Instagram</a>で公開中📷</p>
+    </section>
+
+    <section class="news" id="news">
+      <h2>最新ニュース</h2>
+      <ul>
+        <li><strong>2025/06/22：</strong>6月計画が始動！お楽しみに！🎢</li>
+        <li><strong>2025/06/02：</strong>部費の回収期間が始まりました！ご協力お願いします！🎬</li>
+        <li><strong>2025/05/18：</strong>ディズニーシーへインパしてきました！🎉</li>
+        <li><strong>2025/05/12：</strong>キャンパス内で新入生向けのオリエンテーションを行いました！🎢</li>
+        <li><strong>2025/04/27：</strong>レインフォレストカフェにて新歓食事会を行いました！</li>
+        <li><strong>2025/04/05：</strong>新歓イベントに80名以上が参加！ありがとうございました🎉</li>
+      </ul>
+    </section>
+
+    <footer>
+      <div class="footer-inner">
+        <p>&copy; 2025 Imagination. All rights reserved.</p>
+        <div class="social-links">
+          <a href="https://x.com/donald64daisy66?fbclid=..." target="_blank">X</a>
+          |
+          <a href="https://www.instagram.com/64.imagination.66/" target="_blank">Instagram</a>
+        </div>
+      </div>
+    </footer>
+
+    <button id="topBtn" onclick="window.scrollTo({ top: 0, behavior: 'smooth' })">TOP</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

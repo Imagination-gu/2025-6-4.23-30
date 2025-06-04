@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>マイページ</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>マイページ</h1>
+  <p>ようこそ、<span id="nickname"></span> さん！</p>
+  <div class="auth-buttons">
+    <button onclick="logout()">ログアウト</button>
+  </div>
+  <script>
+    // ニックネーム（name）を表示
+    fetch('/session')
+      .then(res => res.json())
+      .then(data => {
+        if (!data || !data.name) {
+          location.href = 'login.html';
+        } else {
+          document.getElementById('nickname').textContent = data.name;
+        }
+      })
+      .catch(() => {
+        document.getElementById('nickname').textContent = '取得エラー';
+      });
+
+    // ログアウト処理
+    function logout() {
+      fetch('/logout')
+        .then(() => location.href = 'index.html');
+    }
+  </script>
+</body>
+</html>

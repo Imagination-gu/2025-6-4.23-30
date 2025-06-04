@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>ログイン - Imagination</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="content">
+    <h2>ログイン</h2>
+    <form action="/login" method="POST" class="auth-form">
+      <input type="text" name="student_id" placeholder="学籍番号" required><br>
+      <input type="password" name="password" placeholder="パスワード" required><br>
+      <button type="submit">ログイン</button>
+    </form>
+    <p><a href="register.html">新規登録はこちら</a></p>
+    <button onclick="location.href='index.html'" class="back-button">トップページへ戻る</button>
+  </div>
+</body>
+</html>
